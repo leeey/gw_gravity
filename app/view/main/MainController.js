@@ -9,13 +9,18 @@ Ext.define('GwGravity.view.main.MainController', {
 
     alias: 'controller.main',
 
-    onItemSelected: function (sender, record) {
-        Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
-    },
+    init: function() {
 
-    onConfirm: function (choice) {
-        if (choice === 'yes') {
-            //
-        }
+        var me=this;
+        var navTab=me.lookupReference("navTab");
+        var navButton=navTab.getHeader().items[0];
+        Ext.Ajax.request({
+            url: 'resources/json/navigation.json',
+            success: function(response) {
+                var data=Ext.JSON.decode(response.responseText);
+                var navList=[{title: "탭1"}];
+                navTab.add(data);      
+            }
+        });
     }
 });
