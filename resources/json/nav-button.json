@@ -1,0 +1,47 @@
+[
+    {
+        "text": "Home",
+        "iconCls": "x-fa fa-home"
+    }, 
+    {
+        "text": "공지사항",
+        "iconCls": "x-fa fa-info"
+    }, 
+    {
+        "text": "부서",
+        "iconCls": "x-fa fa-users"
+        
+    }, 
+    {
+        "text": "결재",
+        "iconCls": "x-fa fa-file" 
+    },
+    {
+        "text": "업무/협조",
+        "iconCls": "x-fa fa-tasks"  
+    },
+    {
+        "text": "일정",
+        "iconCls": "x-fa fa-calendar"  
+    },
+    {
+        "text": "뉴스",
+        "iconCls": "x-fa fa-newspaper-o"  
+    },
+    {
+        "text": "즐겨찾기",
+        "iconCls": "x-fa fa-bookmark"  
+    },
+    {
+        "text": "Google Docs",
+        "iconCls": "x-fa fa-google"       
+    },
+    {
+        "text": "Trello",
+        "iconCls": "x-fa fa-trello"       
+    },
+    {
+        "text": "MY",
+        "iconCls": "x-fa fa-cog"  
+    }
+]

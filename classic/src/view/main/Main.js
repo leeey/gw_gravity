@@ -39,7 +39,6 @@ Ext.define('GwGravity.view.main.Main', {
                     titleRotation: 0,
                     tabRotation: 0,
                     monitorResize: true,
-
                     header: {
                         layout: {
                             align: 'stretchmax'
@@ -53,7 +52,10 @@ Ext.define('GwGravity.view.main.Main', {
                         items: [
                             {
                                 xtype: 'button',
-                                iconCls: 'x-fa fa-bars'
+                                iconCls: 'x-fa fa-bars',
+                                listeners: {
+                                    afterrender: 'setNavButton'
+                                }
                             }
                         ]
                     },
@@ -92,13 +94,16 @@ Ext.define('GwGravity.view.main.Main', {
                                 }
                             }
                         }
+                    },
+                    listeners: {
+                        render: 'setNavTab'
                     }
                 },
-                {
-                    xtype: 'panel',
-                    frame: true,
-                    flex: .2
-                }
+                // {
+                //     xtype: 'panel',
+                //     frame: true,
+                //     flex: .2
+                // }
             ]
         });
         me.callParent(arguments);

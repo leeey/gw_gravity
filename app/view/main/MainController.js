@@ -9,18 +9,32 @@ Ext.define('GwGravity.view.main.MainController', {
 
     alias: 'controller.main',
 
-    init: function() {
+    setNavTab: function(tab) {
 
-        var me=this;
-        var navTab=me.lookupReference("navTab");
-        var navButton=navTab.getHeader().items[0];
         Ext.Ajax.request({
-            url: 'resources/json/navigation.json',
+            url: 'resources/json/nav-tab.json',
             success: function(response) {
                 var data=Ext.JSON.decode(response.responseText);
-                var navList=[{title: "탭1"}];
-                navTab.add(data);      
+                tab.add(data);      
             }
+            
+        });
+
+
+    },
+
+    setNavButton: function(button) {
+        
+        Ext.Ajax.request({
+            url: 'resources/json/nav-button.json',
+            success: function(response) {
+                var data=Ext.JSON.decode(response.responseText);
+                var menu=Ext.create('Ext.menu.Menu', {
+                    items: data
+                });
+                button.setMenu(menu);
+            }
+            
         });
     }
 });
