@@ -15,7 +15,9 @@ Ext.define('GwGravity.view.main.Main', {
 
         'GwGravity.view.main.MainController',
         'GwGravity.view.main.MainModel',
-        'GwGravity.view.main.List'
+        'GwGravity.view.main.List',
+        'GwGravity.view.main.CoWork',
+        'GwGravity.view.home.Home',
     ],
 
     controller: 'main',
@@ -99,13 +101,19 @@ Ext.define('GwGravity.view.main.Main', {
                         render: 'setNavTab'
                     }
                 },
-                // {
-                //     xtype: 'panel',
-                //     frame: true,
-                //     flex: .2
-                // }
+                {
+                    xtype: 'container',
+                    frame: true,
+                    flex: .2,
+                    items: [
+                        {
+                          xtype: 'co-work'  
+                        }
+                    ]
+                }
             ]
         });
+
         me.callParent(arguments);
     }
 });

@@ -1,7 +1,8 @@
 [
     {
         "title": "Home",
-        "iconCls": "fa-home"
+        "iconCls": "fa-home",
+        "xtype": "home"
     }, 
     {
         "title": "공지사항",
@@ -11,6 +12,10 @@
         "title": "부서",
         "iconCls": "fa-users"
         
+    }, 
+    {
+        "title": "메일",
+        "iconCls": "fa-envelope-o" 
     }, 
     {
         "title": "결재",
@@ -32,14 +37,14 @@
         "title": "즐겨찾기",
         "iconCls": "fa-bookmark"  
     },
-    {
-        "title": "Google Docs",
-        "iconCls": "fa-google"       
-    },
-    {
-        "title": "Trello",
-        "iconCls": "fa-trello"       
-    },
+    // {
+    //     "title": "Google Docs",
+    //     "iconCls": "fa-google"       
+    // },
+    // {
+    //     "title": "Trello",
+    //     "iconCls": "fa-trello"       
+    // },
     {
         "title": "MY",
         "iconCls": "fa-cog"  

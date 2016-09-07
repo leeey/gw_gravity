@@ -11,7 +11,11 @@
         "text": "부서",
         "iconCls": "x-fa fa-users"
         
-    }, 
+    },
+    {
+        "text": "메일",
+        "iconCls": "x-fa fa-envelope-o" 
+    },  
     {
         "text": "결재",
         "iconCls": "x-fa fa-file" 
@@ -30,16 +34,16 @@
     },
     {
         "text": "즐겨찾기",
-        "iconCls": "x-fa fa-bookmark"  
+        "iconCls": "x-fa fa-bookmark"
     },
-    {
-        "text": "Google Docs",
-        "iconCls": "x-fa fa-google"       
-    },
-    {
-        "text": "Trello",
-        "iconCls": "x-fa fa-trello"       
-    },
+    // {
+    //     "text": "Google Docs",
+    //     "iconCls": "x-fa fa-google"       
+    // },
+    // {
+    //     "text": "Trello",
+    //     "iconCls": "x-fa fa-trello"       
+    // },
     {
         "text": "MY",
         "iconCls": "x-fa fa-cog"  

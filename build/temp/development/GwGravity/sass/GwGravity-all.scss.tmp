@@ -878,6 +878,8 @@ $include-ext-window-toast: dynamic(true);;
 $include-ext-window-window: dynamic(true);;
 $include-gwgravity-application: dynamic(true);;
 $include-gwgravity-store-personnel: dynamic(true);;
+$include-gwgravity-view-home-home: dynamic(true);;
+$include-gwgravity-view-main-cowork: dynamic(true);;
 $include-gwgravity-view-main-list: dynamic(true);;
 $include-gwgravity-view-main-main: dynamic(true);;
 $include-gwgravity-view-main-maincontroller: dynamic(true);;
